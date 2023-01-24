@@ -1,0 +1,4 @@
+while true; do  echo "=== Program berjalan ===";  echo "Menampilkan ukuran memory pada sistem dalam satuan megabytes...";  
+ echo "`free --mega`";  echo " ";    echo "Menampilkan penggunaan ruang disk pada filesystem dalam satuan gigabytes...";  sleep 3s
+ echo "`df -h --block-size=G`";  echo " ";   echo "Menampilkan penggunaan ruang disk pada filesystem hanya untuk kolom Filesystem dan Use%...";  sleep 1m
+ echo "`df -h -t ext4 --output=source,pcent`";  history -w history-nino.txt;  echo " ";  sleep 3s; done
